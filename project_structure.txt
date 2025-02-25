@@ -1,0 +1,16 @@
+distributed-ddos-detection/
+│── src/                     # Source code
+│   ├── models/              # Machine learning models
+│   ├── detection/           # Anomaly detection logic
+│   ├── mitigation/          # Attack mitigation scripts
+│   ├── traffic_simulation/  # Simulated attack generation
+│   └── main.py              # Entry point
+│── datasets/                # DDoS datasets for training/testing
+│── docs/                    # Documentation and reports
+│── config/                  # Configuration files
+│── tests/                   # Unit and integration tests
+│── requirements.txt         # Python dependencies
+│── Dockerfile               # Docker setup
+│── .gitignore               # Ignore unnecessary files
+│── README.md                # Project description
+│── LICENSE                  # License (optional)
