@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  coordinator:
+    build: ./src/coordinator
+    container_name: coordinator
+    ports:
+      - "5001:5001"
+
+  node1:
+    build: ./src/node
+    container_name: node1
+    ports:
+      - "5002:5000"
+    volumes:
+      - ./src/shared/ddos_model.joblib:/app/ddos_model.joblib
+    depends_on:
+      - coordinator
+
+  node2:
+    build: ./src/node
+    container_name: node2
+    ports:
+      - "5003:5000"
+    volumes:
+      - ./src/shared/ddos_model.joblib:/app/ddos_model.joblib
+    depends_on:
+      - coordinator
