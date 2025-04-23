@@ -16,8 +16,30 @@ A scalable, containerized system for detecting and mitigating Distributed Denial
 
 🚀 Getting Started
 1. 📊 Clean & Prepare Data
-      ```bash
-        cd src/scripts
-        python clean_data.py
+    ```bash
+      cd src/scripts
+      python clean_data.py
 
+2. 🧠 Train the Model
+   ```bash
+   python train_model.py
+
+3. 🐳 Start the Distributed System
+   ```bash
+   docker-compose up --build
+
+4. 📡 Simulate Traffic
+   ```bash
+   python src/scripts/send_traffic.py
+
+5. 📈 Evaluate Model Performance (Optional)
+   ```bash
+   python src/scripts/evaluate_model.py
+
+
+🧩 Future Improvements
+ - Real-time alerting and dashboard
+ - Automatic IP blocking (firewall integration)
+ - Online learning for continuous model updates
+ - Cloud-native deployment with Kubernetes
 
