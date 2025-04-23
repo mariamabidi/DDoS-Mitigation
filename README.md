@@ -16,7 +16,8 @@ A scalable, containerized system for detecting and mitigating Distributed Denial
 
 🚀 Getting Started
 1. 📊 Clean & Prepare Data
-      cd src/scripts
-      python clean_data.py
+      ```bash
+        cd src/scripts
+        python clean_data.py
 
 
