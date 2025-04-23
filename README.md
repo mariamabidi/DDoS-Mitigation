@@ -6,7 +6,7 @@ A scalable, containerized system for detecting and mitigating Distributed Denial
  - This project implements a distributed real-time DDoS detection system that:
  - Uses multiple Dockerized analysis nodes to classify network traffic.
  - Relays suspicious activity to a central Coordinator service.
- - Leverages a Random Forest machine learning model trained on features from the CICIDS 2010 dataset.
+ - Leverages a Random Forest machine learning model trained on features from the ISCX2012 dataset.
  - Can be scaled horizontally by adding more analysis nodes.
 
 ⚙️ Requirements
