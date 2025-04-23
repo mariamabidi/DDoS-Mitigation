@@ -1,0 +1,6 @@
+destination,source,destinationPort,sourceTCPFlagsDescription,totalSourcePackets,destinationTCPFlagsDescription,direction,totalDestinationPackets,totalDestinationBytes,totalSourceBytes,appName,sourcePort,Label,sourcePayloadAsBase64_len,destinationPayloadAsBase64_len
+192.168.5.122,192.168.2.106,80,"S,A",12,"S,A",L2L,6,384,780,HTTPWeb,2705,1,7,7
+192.168.5.122,192.168.2.113,80,"S,A",6,"S,A",L2L,4,256,392,HTTPWeb,2870,1,7,7
+192.168.5.122,192.168.1.101,80,"S,A",4,"S,A",L2L,2,128,260,HTTPWeb,4192,1,7,7
+192.168.2.113,192.168.2.112,4444,S,1,"R,A",L2L,1,64,66,Unknown_TCP,1905,1,7,7
+192.168.3.115,192.168.2.112,1583,S,4,"R,A",L2L,4,256,256,Unknown_TCP,52707,1,7,7

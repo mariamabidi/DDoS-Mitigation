@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 from joblib import load
 import pandas as pd
@@ -6,7 +7,7 @@ import requests
 app = Flask(__name__)
 
 # Load model and expected features
-model, expected_features = load("ddos_model.joblib")
+model, expected_features = load(os.path.join("shared", "ddos_model.joblib"))
 
 COORDINATOR_URL = "http://coordinator:5001/report"
 
